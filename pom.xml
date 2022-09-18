@@ -25,8 +25,11 @@
         <spring-boot-admin.version>2.7.3</spring-boot-admin.version>
         <spring-boot.mybatis>2.2.2</spring-boot.mybatis>
         <fastjson.version>2.0.12</fastjson.version>
-
+        <mybatis.plus.version>3.4.2</mybatis.plus.version>
+        <mysql.connector.version>8.0.16</mysql.connector.version>
+        <druid.version>1.1.22</druid.version>
         <hutool-all.version>5.8.7</hutool-all.version>
+
     </properties>
 
     <!-- 依赖声明 -->
@@ -79,6 +82,31 @@
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
             </dependency>
+
+            <!-- mybatis-plus启动器 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis.plus.version}</version>
+            </dependency>
+            <!-- mysql驱动 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+            <!-- Druid连接池 -->
+            <!--        <dependency>-->
+            <!--            <groupId>com.alibaba</groupId>-->
+            <!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+            <!--            <version>${druid.version}</version>-->
+            <!--        </dependency>-->
+            <!-- Druid连接池,sharding-jdbc整合时，不要使用starter，会报错 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -93,6 +121,12 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool-all.version}</version>
+        </dependency>
+        <!-- lombok插件 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
         </dependency>
     </dependencies>
 
