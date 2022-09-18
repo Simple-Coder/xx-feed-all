@@ -9,11 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>feed-commons</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>feed-common-core</module>
-    </modules>
+    <artifactId>feed-center</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

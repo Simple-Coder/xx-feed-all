@@ -10,6 +10,7 @@
         <module>feed-commons</module>
         <module>feed-gateway</module>
         <module>feed-sub-center</module>
+        <module>feed-center</module>
     </modules>
     <packaging>pom</packaging>
 
