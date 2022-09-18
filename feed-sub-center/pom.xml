@@ -9,8 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>feed-comment-center</artifactId>
+    <artifactId>feed-sub-center</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>feed-user-center</module>
+        <module>feed-postcard-center</module>
+        <module>feed-comment-center</module>
+    </modules>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
